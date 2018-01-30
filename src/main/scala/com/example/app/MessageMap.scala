@@ -8,6 +8,8 @@ class MessageMap {
 
   def init(): Unit = {
     this.add(1, "Sample text")
+    this.add(2, "Another text")
+    this.add(3, "Yet another text")
   }
 
   def add(id: Int, text: String) = {
@@ -20,7 +22,7 @@ class MessageMap {
   }
 
   def get(id: Int): Message = {
-    map(id)
+    map.getOrElse(id, null)
   }
 
   def remove(id: Int) = {
