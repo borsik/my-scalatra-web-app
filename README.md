@@ -3,7 +3,7 @@
 ## Build & Run ##
 
 ```sh
-$ cd My_Scalatra_Web_App
+$ cd my-scalatra-web-app
 $ sbt
 > jetty:start
 > browse
